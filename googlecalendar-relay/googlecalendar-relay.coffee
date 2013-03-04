@@ -29,7 +29,7 @@ class GoogleCalendarRelay extends BusClient
 
     constructor: (@options = {}) ->
       super(@options)
-      @cronJob = if @options.cronJob then @options.cronJob else cron.CronJob
+      @cronJob = @options.cronJob ?= cron.CronJob
       @jobs = []
       @on 'entry', (message) =>
         if @bus?
