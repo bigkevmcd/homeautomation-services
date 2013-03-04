@@ -8,7 +8,7 @@ You will need the 'homeauto' modules from Stian's homeautomation repository, the
 
 ## Example
 
-Create a configuration file in ~/.homeautomation/config.json
+Create a configuration file in ~/.homeautomation/homeautomation.json
 
 ``` js
 {
