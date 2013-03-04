@@ -1,0 +1,10 @@
+node_modules/
+
+*config.json
+test.coffee
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*

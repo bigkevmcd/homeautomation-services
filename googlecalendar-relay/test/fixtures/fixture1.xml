@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/" xmlns:gCal="http://schemas.google.com/gCal/2005" xmlns:gd="http://schemas.google.com/g/2005">
+  <id>http://www.google.com/calendar/feeds/testing@example.com/private-ad2a513e13d35bccabcdefgh12345678/full</id>
+  <updated>2013-02-18T10:47:59.000Z</updated>
+  <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/g/2005#event"/>
+  <title type="text">Testing Person</title>
+  <subtitle type="text">Testing Person</subtitle>
+  <link rel="alternate" type="text/html" href="https://www.google.com/calendar/embed?src=testing@example.com"/>
+  <link rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml" href="https://www.google.com/calendar/feeds/testing@example.com/private-ad2a513e13d35bccabcdefgh12345678/full"/>
+  <link rel="http://schemas.google.com/g/2005#batch" type="application/atom+xml" href="https://www.google.com/calendar/feeds/testing@example.com/private-ad2a513e13d35bccabcdefgh12345678/full/batch"/>
+  <link rel="self" type="application/atom+xml" href="https://www.google.com/calendar/feeds/testing@example.com/private-ad2a513e13d35bccabcdefgh12345678/full?max-results=25&amp;start-min=2013-02-28&amp;start-max=2013-03-05"/>
+  <author>
+    <name>Testing Person</name>
+    <email>testing@example.com</email>
+  </author>
+  <generator version="1.0" uri="http://www.google.com/calendar">Google Calendar</generator>
+  <openSearch:totalResults>1</openSearch:totalResults>
+  <openSearch:startIndex>1</openSearch:startIndex>
+  <openSearch:itemsPerPage>25</openSearch:itemsPerPage>
+  <gCal:timezone value="Europe/London"/>
+  <gCal:timesCleaned value="0"/>
+  <gd:where valueString="Glasgow"/>
+  <entry>
+    <id>http://www.google.com/calendar/feeds/testing@example.com/private-ad2a513e13d35bccabcdefgh12345678/full/q2h4tjfbn4abcdefgh12345678</id>
+    <published>2013-02-18T10:46:48.000Z</published>
+    <updated>2013-02-18T10:47:59.000Z</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/g/2005#event"/>
+    <title type="text">Testing Event</title>
+    <content type="text">Testing Event</content>
+    <link rel="alternate" type="text/html" href="https://plus.google.com/events/cq2h4tjfbn4abcdefgh12345678" title="alternate"/>
+    <link rel="related" type="text/html" href="https://plus.google.com/events/cq2h4tjfbn4abcdefgh12345678"/>
+    <link rel="self" type="application/atom+xml" href="https://www.google.com/calendar/feeds/testing@example.com/private-ad2a513e13d35bccabcdefgh12345678/full/q2h4tjfbn4abcdefgh12345678"/>
+    <author>
+      <name>testing@example.com</name>
+      <email>testing@example.com</email>
+    </author>
+    <gd:comments>
+      <gd:feedLink href="https://www.google.com/calendar/feeds/testing@example.com/private-ad2a513e13d35bccabcdefgh12345678/full/q2h4tjfbn4abcdefgh12345678/comments"/>
+    </gd:comments>
+    <gd:eventStatus value="http://schemas.google.com/g/2005#event.confirmed"/>
+    <gd:where valueString="4 High Street"/>
+    <gd:who email="testing@example.com" rel="http://schemas.google.com/g/2005#event.organizer" valueString="testing@example.com">
+      <gd:attendeeStatus value="http://schemas.google.com/g/2005#event.accepted"/>
+    </gd:who>
+    <gd:when endTime="2013-03-02T21:00:00.000Z" startTime="2013-03-02T19:00:00.000Z"/>
+    <gd:transparency value="http://schemas.google.com/g/2005#event.opaque"/>
+    <gCal:anyoneCanAddSelf value="false"/>
+    <gCal:guestsCanInviteOthers value="true"/>
+    <gCal:guestsCanModify value="false"/>
+    <gCal:guestsCanSeeGuests value="true"/>
+    <gCal:sequence value="1"/>
+    <gCal:uid value="q2h4tjfbn4abcdefgh12345678@google.com"/>
+  </entry>
+</feed>
