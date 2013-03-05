@@ -17,7 +17,7 @@ extractValueFromEntry = (entry, attribute) ->
   (item['value'] for item in entry[attribute]).join ' '
 
 extractWhereFromEntry = (entry) ->
-  (item['valueString'] for item in entry['gd:where']).join ' '  
+  (item['valueString'] for item in entry['gd:where']).join ' '
 
 statusMapping =
   'http://schemas.google.com/g/2005#event.canceled': 'canceled'

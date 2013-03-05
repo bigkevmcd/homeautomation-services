@@ -1,4 +1,5 @@
 nock = require 'nock'
+util = require 'util'
 
 GoogleCalendarRelay = require '../googlecalendar-relay'
 helpers = require '../helpers'
@@ -16,6 +17,7 @@ testConfig =
     magicCookie: 'private-lmnopqrstuv'
   ]
 
+
 class FakeMessageBus
 
   constructor: () ->
@@ -28,6 +30,7 @@ class FakeMessageBus
   close: () ->
     @closed = true
 
+
 class FakeCronJob
   constructor: (@pattern) ->
     @started = false
@@ -39,12 +42,14 @@ class FakeCronJob
   stop: () ->
     @stopped = true
 
+
 class FakeConsole
   constructor: () ->
     @messages = []
 
   log: (message) ->
     @messages.push message
+
 
 describe 'GoogleCalendarRelay', ->
 
@@ -65,7 +70,6 @@ describe 'GoogleCalendarRelay', ->
       done()
 
   describe 'fetchUrlAndDispatch', (done) ->
-
     beforeEach (done) =>
       @fakeBus = new FakeMessageBus()
       done()
@@ -118,7 +122,6 @@ describe 'GoogleCalendarRelay', ->
         done()
 
   describe 'close', (done) ->
-
     beforeEach (done) =>
       @fakeBus = new FakeMessageBus()
       @relay = new GoogleCalendarRelay(
@@ -140,7 +143,6 @@ describe 'GoogleCalendarRelay', ->
       done()
 
   describe 'runService', (done) ->
-
     beforeEach (done) =>
       @fakeBus = new FakeMessageBus
       @fakeConsole = new FakeConsole

@@ -4,7 +4,7 @@
   "description": "Google Calendar events to 0MQ",
   "version": "0.0.1",
   "dependencies": {
-    "coffee-script": "*",
+    "coffee-script": "1.5.0",
     "zmq": "*",
     "nconf": "*",
     "underscore": "*",
