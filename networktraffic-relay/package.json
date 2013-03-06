@@ -1,0 +1,20 @@
+{
+  "author": "Kevin McDermott <bigkevmcd@gmail.com>",
+  "name": "networktraffic-relay",
+  "description": "/proc/net/dev => ØMQ",
+  "version": "0.0.1",
+  "dependencies": {
+    "coffee-script": "1.5.0",
+    "zmq": "*",
+    "nconf": "*",
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "jasmine-node": "*"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/coffee run.coffee",
+    "test": "./node_modules/.bin/jasmine-node --coffee test",
+    "watch": "./node_modules/.bin/jasmine-node --coffee --autotest ."
+  }
+}
