@@ -8,7 +8,6 @@ class NetworkRelay extends BusClient
 
     constructor: (options = {}) ->
       super(options)
-
       @pollTime = options.time ?= 60000
       @procNetDev = options.filename ?= '/proc/net/dev'
       @counter = 0
@@ -18,14 +17,14 @@ class NetworkRelay extends BusClient
     runService: () ->
       @watchProcNetDev()
 
-    watchProcNetDev: () =>
+    watchProcNetDev: () ->
       @processProcNetDev()
       delay(@pollTime, @watchProcNetDev)
 
     getNow: () ->
       new Date().getTime()
 
-    processProcNetDev: (callback) =>
+    processProcNetDev: (callback) ->
       fs.readFile @procNetDev, (err, data) =>
         throw err if err?
         now = @getNow()

@@ -31,7 +31,7 @@ Create a configuration file in ~/.homeautomation/homeautomation.json
 ```
 To get the calendarId and magicCookie, go to your calendar, view the "Calendar settings" and look at the XML "Private Address" for the calendar.
 
-The URL is of the form http://www.google.com/calendar/feeds/<calendarId>/<magicCookie>/basic.
+The URL is of the form ```http://www.google.com/calendar/feeds/<calendarId>/<magicCookie>/basic```.
 
 The calendarId may look like your Google email address, and the magicCookie will look like "private-HASH".
 

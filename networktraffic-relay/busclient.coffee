@@ -12,14 +12,14 @@ class BusClient extends EventEmitter
       @process.on 'SIGINT', () =>
         @close()
 
-    close: () =>
+    close: () ->
       if @bus then @bus.close()
 
     run: () ->
       @bus = @bus?= @_createMessageBus(@options)
       @runService()
 
-    _createMessageBus: (options = {}) =>
+    _createMessageBus: (options = {}) ->
       hostname = options.brokerHost
       # TODO: Need a better way to specify the identity
       # TODO: Migrate this to the bus package
