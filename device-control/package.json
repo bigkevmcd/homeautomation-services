@@ -1,0 +1,21 @@
+{
+  "author": "Kevin McDermott <bigkevmcd@gmail.com>",
+  "name": "homeauto-device-control",
+  "description": "0MQ -> Device Control",
+  "version": "0.0.1",
+  "dependencies": {
+    "coffee-script": "*",
+    "zmq": "*",
+    "nconf": "*",
+    "underscore": "*",
+    "rfxcom": "*"
+  },
+  "devDependencies": {
+    "jasmine-node": "*"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/coffee run.coffee",
+    "test": "./node_modules/.bin/jasmine-node --coffee test",
+    "watch": "./node_modules/.bin/jasmine-node --coffee --autotest ."
+  }
+}
